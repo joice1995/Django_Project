@@ -1,0 +1,106 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}
+<title>About</title>
+{% endblock title %}
+
+{% block content  %}
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static "\images\car1.jpg" %}"" class="d-block w-100" alt="...">
+        
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static "\images\car2.jpg" %}" class="d-block w-100" alt="...">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "\images\car3.jpg" %}"" class="d-block w-100" alt="...">
+        
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="container p-1" style="background-color: rgba(228, 212, 188, 0.536);margin-top: 25px;">
+  <div class="row m-5">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static "/images/pic1.jpg" %}">
+          <img src="{% static "/images/pic1.jpg" %}" alt="" style="width:100%">
+          <div class="caption">
+            <p>Testing in labs</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static "/images/pic2.jpg" %}">
+          <img src="{% static "/images/pic2.jpg" %}" alt="" style="width:100%">
+          <div class="caption">
+            <p>Our staff</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static "/images/pic3.jpg" %}">
+          <img src="{% static "/images/pic3.jpg" %}" alt="" style="width:100%">
+          <div class="caption">
+            <p>Blood Testing</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static "/images/pic4.jpg" %}">
+          <img src="{% static "/images/pic4.jpg" %}" alt="" style="width:100%">
+          <div class="caption">
+            <p>Vacine</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static "/images/pic5.jpg" %}">
+          <img src="{% static "/images/pic5.jpg" %}" alt="" style="width:100%">
+          <div class="caption">
+            <p>Casualty</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static "/images/pic6.jpg" %}">
+          <img src="{% static "/images/pic6.jpg" %}" alt="" style="width:100%">
+          <div class="caption">
+            <p>Testing</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+    
+  
+{% endblock content  %}

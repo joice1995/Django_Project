@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+
+{% block title %}
+<title>Doctors</title>
+{% endblock title %}
+
+
+{% block content  %}
+
+<h1 style="text-align:center; font-size: 40px; color:#000000; font-weight: 800; margin-bottom: 15px;
+padding: 40px;">
+  Our Doctors</h1>
+<div class='container text-center' style='background-color: white'>
+
+    {% for d in doc %}
+          <div class="card text-center mx-3 my-3" style="display:inline-block">
+            <img style='width: 285px; height: 200px;' src="{{d.doc_image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dr. {{d.doc_name}}</h5>
+              <h6 class="card-text"> {{d.dep_name}} </h6>
+              <p class="card-text"> {{d.dep_spec}} </p>
+              <a href="#" class="btn btn-primary">Book Now</a>
+            </div>  
+</div>
+
+    {% endfor %}
+</div>
+{% endblock content %}

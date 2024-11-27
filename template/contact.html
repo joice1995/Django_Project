@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+<title>Contact</title>
+{% endblock title %}
+
+
+{% block content %}
+<section class="row">
+  <div class="col-md-6" style="padding-top: 100px; padding-left: 45px; font-family: poppins;">
+    <h1 style="font-size: 50px; color: rgb(0, 255, 115); font-weight: 800;">Get In Touch With Us</h1>
+    <p>If you cant't find answer your questions,please dont't hesitate to <br>Contact us.
+      <br><br>
+      <strong style="font-size: 18px;font-weight: 500; color: rgb(0, 255, 64);">City Hospital</strong><br>
+      Indra Gandhi Road , Trivandrum -659002 Kerala, India
+    </p>
+    <p class="title" style="color: rgb(0, 255, 64);"><b><u>PHONE</u></b></p>
+    <p><i class="fa fa-phone">: +91-8765435902</i></p>
+    <p><i class="fa fa-phone">:+91-8765467865</i></p>
+
+    <p class="title" style="color: rgb(0, 255, 13);"><b><u>EMAIL</u></b></p>
+    <p><i class="fa fa-envelope">Cityhospital@gmail.com</i></p>
+  </div>
+  <div class="col-md-6" style="margin-top: 100px;">
+    <img src="{% static "/images/recp.jpg" %}" alt="" style="height: 400px; width: 550px;">
+
+</section>
+
+{% endblock content %}

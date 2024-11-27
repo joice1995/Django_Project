@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+
+{% block title %}
+<title>Department</title>
+{% endblock title %}
+
+{% block content %}
+
+<div class="container"  style="background-color: rgba(228, 212, 188, 0.536);margin-top: 25px;">
+<h1 style="text-align: center;">Departments</h1>
+
+
+{% for d in dept %}
+<div class="card m-3">
+    <div class="card-body">
+      <h5 class="card-title">{{d.dep_name}}</h5>
+      <p class="card-text">{{d.dep_description}}</p>
+      <button type="button" class="btn btn-outline-primary m-2">Read More</button>
+    </div>
+  </div>
+
+
+{% endfor %}
+</div>
+{% endblock content %}
+
+

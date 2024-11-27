@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+
+{% load static %}
+
+{% block para %}
+<h1>medical services</h1>
+
+{% endblock para %}
+    
+
+{% block content %}
+
+
+{% for m in med  %}
+<h1> {{m.driver_name}} </h1>
+<h4> {{m.description}} </h4>
+{% endfor %}
+    
+    
+{% endblock content %}
